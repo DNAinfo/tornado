@@ -990,7 +990,7 @@ class FacebookGraphMixin(OAuth2Mixin):
             access_token = args["access_token"][-1]
 
         session = {
-            "access_token": args["access_token"][-1],
+            "access_token": access_token,
             "expires": args.get("expires")
         }
 
